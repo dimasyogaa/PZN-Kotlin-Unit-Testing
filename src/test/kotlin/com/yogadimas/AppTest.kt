@@ -3,11 +3,16 @@
  */
 package com.yogadimas
 
-import kotlin.test.Test
-import kotlin.test.assertNotNull
+import org.junit.jupiter.api.Assertions.assertNotNull
+import org.junit.jupiter.api.Test
+
 
 class AppTest {
-    @Test fun testAppHasAGreeting() {
+    @Test
+    fun testAppHasAGreeting() {
+
+        println("ini testing")
+
         val classUnderTest = App()
         assertNotNull(classUnderTest.greeting, "app should have a greeting")
     }
