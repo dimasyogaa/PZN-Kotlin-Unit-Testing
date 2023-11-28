@@ -1,4 +1,4 @@
-package com.yogadimas._2_menggunakan_assertions
+package com.yogadimas._4_menonaktifkan_test
 
 import com.yogadimas._1_3.Calculator
 import org.junit.jupiter.api.Assertions.assertEquals
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 
-@DisplayName("_2_menggunakan_assertions - CalculatorTest")
+@DisplayName("_4_menonaktifkan_test - CalculatorTest")
 class CalculatorTest {
 
     val calculator = Calculator()
@@ -22,6 +22,7 @@ class CalculatorTest {
 
 
     }
+
 
     @Disabled
     @Test
@@ -61,5 +62,12 @@ class CalculatorTest {
             calculator.divide(100, 0)
         }
 
+    }
+
+
+    @Disabled
+    @Test
+    fun testComingSoon() {
+        // belum selesai
     }
 }
