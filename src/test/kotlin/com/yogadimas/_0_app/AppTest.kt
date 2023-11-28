@@ -4,12 +4,17 @@
 package com.yogadimas._0_app
 
 import org.junit.jupiter.api.Assertions.assertNotNull
+import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
 
+@DisplayName("_0_app - AppTest")
 class AppTest {
+
+
     @Test
     fun testAppHasAGreeting() {
+
 
         println("ini testing")
 
@@ -17,3 +22,4 @@ class AppTest {
         assertNotNull(classUnderTest.greeting, "app should have a greeting")
     }
 }
+
