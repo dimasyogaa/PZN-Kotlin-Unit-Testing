@@ -1,5 +1,6 @@
 package com.yogadimas._9_menggunakan_tag
 
+import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Tag
 import org.junit.jupiter.api.Test
 
@@ -17,6 +18,7 @@ import org.junit.jupiter.api.Test
  */
 
 @Tag("integration-test")
+@DisplayName("_9_menggunakan_tag - SampleIntegrationTest")
 class SampleIntegrationTest {
 
     @Test
