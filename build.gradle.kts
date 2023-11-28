@@ -1,3 +1,4 @@
+
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 /*
@@ -43,8 +44,24 @@ application(Action {
 // }
 
 // atau lebih singkat
+// tasks.test {
+//     useJUnitPlatform()
+// }
+
+
+/** Menggunakan Tag
+ * Membuat Task Test di Gradle
+ */
 tasks.test {
-    useJUnitPlatform()
+    useJUnitPlatform {
+        excludeTags("integration-test")
+    }
+}
+
+tasks.register<Test>("integrationTest") {
+    useJUnitPlatform {
+        includeTags("integration-test")
+    }
 }
 
 // secara default jvm 1.7 , sedangkan junit5 jalan di jvm 1.8 atau lebih tinggi
@@ -59,4 +76,5 @@ tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
 }
 
-// jalankan dengan perintah gradle test atau gradle test --info di terminal
+// jalankan dengan perintah gradle test atau gradle test --info di termina
+

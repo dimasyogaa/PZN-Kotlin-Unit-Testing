@@ -1,4 +1,4 @@
-package com.yogadimas._8_Test_Berdasarkan_Kondisi
+package com.yogadimas._8_test_berdasarkan_kondisinya
 
 import org.junit.jupiter.api.*
 import org.junit.jupiter.api.condition.*
@@ -14,6 +14,7 @@ import org.junit.jupiter.api.condition.*
  */
 
 @TestMethodOrder(value = MethodOrderer.OrderAnnotation::class)
+@DisplayName("_8_test_berdasarkan_kondisi - ConditionalTest")
 class ConditionalTest {
 
 
