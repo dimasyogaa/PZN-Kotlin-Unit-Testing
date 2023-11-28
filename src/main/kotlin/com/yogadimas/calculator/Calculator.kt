@@ -1,4 +1,4 @@
-package com.yogadimas._1_3
+package com.yogadimas.calculator
 
 class Calculator {
 

@@ -1,6 +1,6 @@
 package com.yogadimas._2_menggunakan_assertions
 
-import com.yogadimas._1_3.Calculator
+import com.yogadimas.calculator.Calculator
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNotEquals
 import org.junit.jupiter.api.Disabled

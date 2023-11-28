@@ -1,6 +1,6 @@
 package com.yogadimas._1_membuat_test
 
-import com.yogadimas._1_3.Calculator
+import com.yogadimas.calculator.Calculator
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 

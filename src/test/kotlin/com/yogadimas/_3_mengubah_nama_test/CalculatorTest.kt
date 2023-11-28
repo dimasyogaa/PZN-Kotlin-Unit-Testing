@@ -1,6 +1,6 @@
 package com.yogadimas._3_mengubah_nama_test
 
-import com.yogadimas._1_3.Calculator
+import com.yogadimas.calculator.Calculator
 import com.yogadimas._3_mengubah_nama_test.generator.SimpleDisplayNameGenerator
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNotEquals
