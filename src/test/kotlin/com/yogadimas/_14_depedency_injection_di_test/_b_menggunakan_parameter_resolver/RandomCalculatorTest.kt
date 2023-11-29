@@ -21,7 +21,7 @@ import java.util.*
  * Kode : Membuat Random Parameter Resolver
  */
 
-@DisplayName("_13_informasi_test - InformationTest")
+@DisplayName("_14_dependency_injection - menggunakan parameter resolver - RandomCalculatorTest")
 @Extensions(
     value = [
         ExtendWith(RandomParameterResolver::class)
