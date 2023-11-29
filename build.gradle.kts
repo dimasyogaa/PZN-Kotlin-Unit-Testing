@@ -30,6 +30,9 @@ dependencies {
 
     // junit5
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.1")
+
+    // mocking
+    testImplementation("org.mockito:mockito-junit-jupiter:3.4.4")
 }
 
 application(Action {
