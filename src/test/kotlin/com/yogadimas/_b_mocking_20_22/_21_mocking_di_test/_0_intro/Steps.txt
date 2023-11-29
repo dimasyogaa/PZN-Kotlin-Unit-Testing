@@ -1,0 +1,29 @@
+1. Buat Data Class => Person -- (model)
+
+2. Buat Interface Repository => PersonRepository -- (repository)
+
+3. Buat Service => PersonService -- (service)
+
+=====================================================================================
+
+1. ketika PersonService membutuhkan constructor tipe data interface PersonRepository
+
+class PersonService(private val personRepository: PersonRepository) {}
+
+
+
+2. maka di unit test kita bisa lakukan seperti ini
+
+    @ExtendWith(MockitoExtension::class)
+    class PersonServiceTest {
+
+        @Mock
+        lateinit var personRepository: PersonRepository
+
+        lateinit var personService: PersonService
+
+        @BeforeEach
+        fun beforeEach() {
+            personService = PersonService(personRepository)
+        }
+    }
