@@ -35,7 +35,7 @@ abstract class ParentCalculatorTest {
 
     @AfterEach
     fun afterEach() {
-        println("After each")
+        println("After each\n")
     }
 
 
