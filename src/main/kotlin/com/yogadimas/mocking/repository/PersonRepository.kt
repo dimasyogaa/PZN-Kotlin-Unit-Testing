@@ -6,5 +6,6 @@ import com.yogadimas.mocking.model.Person
 interface PersonRepository {
 
     fun selectById(id: String): Person
+    fun insert(person: Person)
 
 }

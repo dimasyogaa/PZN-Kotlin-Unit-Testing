@@ -2,6 +2,7 @@ package com.yogadimas.mocking.service
 
 import com.yogadimas.mocking.model.Person
 import com.yogadimas.mocking.repository.PersonRepository
+import java.util.*
 
 // tempat menyimpan business logic
 class PersonService(private val personRepository: PersonRepository) {
@@ -21,6 +22,25 @@ class PersonService(private val personRepository: PersonRepository) {
         } else {
             throw Exception("Person not found")
         }
+
+    }
+
+    fun register(name: String): Person {
+
+        if (name.isBlank()) {
+            throw IllegalArgumentException("Person name is blank")
+        }
+
+        // buat id random
+        val id = UUID.randomUUID().toString()
+
+        val person = Person(id, name)
+
+        // menyimpan ke database
+        personRepository.insert(person) // ini harus diverifikasi di unit test karena tidak mengembalikan nilai dan pastikan berapa kali kode ini dipanggil
+
+        // mengembalikan objek Person
+        return person
 
     }
 }

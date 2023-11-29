@@ -1,0 +1,10 @@
+1. interface PersonRepository
+- Buat function insert(person:Person)
+    - menyimpan data ke database
+    - tidak mengembalikan nilai alias unit
+
+2. class PersonService
+- Buat function register(name:String)
+    - membuat object Person dengan id random
+    - menyimpan object Person ke database via PersonRepository(insert(person:Person))
+    - mengembalikan/return object Person yang sudah memiliki id random
